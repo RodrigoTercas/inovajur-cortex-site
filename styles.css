@@ -408,7 +408,11 @@ h3 { font-family: var(--serif); font-weight: 500; font-size: 25px; line-height: 
 .pessoa:hover img { filter: none; }
 .pessoa h3 { font-size: clamp(26px, 2.6vw, 36px); font-weight: 400; }
 .pessoa__cargo { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: var(--azul-forte); margin: 10px 0 14px; line-height: 1.5; }
-.pessoa p:last-child { color: var(--escuro-suave); }
+.pessoa__lead { font-family: var(--serif); font-size: 19px; line-height: 1.35; color: var(--escuro); margin-bottom: 16px; }
+.pessoa__blocos { display: grid; gap: 14px; }
+.pessoa__blocos div { border-top: 1px solid var(--linha-e); padding-top: 12px; }
+.pessoa__blocos dt { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .14em; color: var(--escuro-suave); margin-bottom: 6px; }
+.pessoa__blocos dd { margin: 0; font-size: 15.5px; line-height: 1.55; color: var(--escuro-suave); }
 
 /* ---------- § 11 perguntas ---------- */
 .faq { border-top: 2px solid var(--escuro); margin-left: clamp(0px, 25%, 25%); }
@@ -490,7 +494,8 @@ h3 { font-family: var(--serif); font-weight: 500; font-size: 25px; line-height: 
   .recibos, .planos, .garantias, .trilha, .publicos { grid-template-columns: 1fr; }
   .plano { border-right: 0 !important; border-bottom: 1px solid var(--escuro); }
   .plano:last-child { border-bottom: 0; }
-  .pessoa { grid-template-columns: 96px minmax(0, 1fr); gap: 16px; }
+  .pessoa { grid-template-columns: 1fr; gap: 18px; }
+  .pessoa img { width: 132px; }
   .nota--1, .nota--3 { display: none; }
   .topo .botao { padding: 10px 12px; }
   .adquira { width: 88px; height: 88px; }
