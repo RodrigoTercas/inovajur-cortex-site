@@ -286,6 +286,13 @@ h3 { font-family: var(--serif); font-weight: 500; font-size: 25px; line-height: 
 .campo__barra { height: 6px; background: rgba(20, 22, 28, .12); margin-bottom: 16px; }
 .campo__barra i { display: block; height: 100%; width: 100%; background: var(--azul-forte); transform-origin: 0 50%; transition: transform .7s var(--saida); }
 
+/* ---------- § 06 públicos ---------- */
+.publicos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-bottom: clamp(56px, 7vw, 104px); }
+.publicos li { border-top: 2px solid var(--escuro); padding-top: 16px; }
+.publicos span { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--azul-forte); }
+.publicos h3 { font-size: clamp(22px, 2vw, 28px); font-weight: 400; margin: 10px 0 8px; }
+.publicos p { font-size: 15.5px; color: var(--escuro-suave); }
+
 /* ---------- § 06 prática ---------- */
 .pratica { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(28px, 5vw, 88px); align-items: center; }
 .trama { background: #04060C; border-radius: 10px; overflow: hidden; position: relative; }
@@ -449,6 +456,7 @@ h3 { font-family: var(--serif); font-weight: 500; font-size: 25px; line-height: 
   .menu { display: none; }
   .acoes { margin-left: auto; }
   .garantias { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .publicos { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 32px; }
   .planos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .plano:nth-child(2) { border-right: 0; }
   .plano:nth-child(-n+2) { border-bottom: 1px solid var(--escuro); }
@@ -479,7 +487,7 @@ h3 { font-family: var(--serif); font-weight: 500; font-size: 25px; line-height: 
   .entrar { display: none; }
 }
 @media (max-width: 560px) {
-  .recibos, .planos, .garantias, .trilha { grid-template-columns: 1fr; }
+  .recibos, .planos, .garantias, .trilha, .publicos { grid-template-columns: 1fr; }
   .plano { border-right: 0 !important; border-bottom: 1px solid var(--escuro); }
   .plano:last-child { border-bottom: 0; }
   .pessoa { grid-template-columns: 96px minmax(0, 1fr); gap: 16px; }
